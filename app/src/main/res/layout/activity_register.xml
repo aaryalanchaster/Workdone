@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00BCD4"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Let's get started!"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/logo2"
+        android:layout_width="285dp"
+        android:layout_height="96dp"
+        android:backgroundTint="#00BCD4"
+        android:fontFamily="@font/allura"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/rname"
+            android:layout_width="279dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingVertical="10dp">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/remail"
+            android:layout_width="279dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:backgroundTint="#00BCD4"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="10dp" />
+
+        <EditText
+            android:id="@+id/rpassword"
+            android:layout_width="279dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingVertical="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="279dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="156dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <Button
+            android:id="@+id/rsingup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#54E2F4"
+            android:backgroundTint="#00BCD4"
+            android:elevation="30dp"
+            android:freezesText="false"
+            android:text="SignUp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#09CDE6"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="84dp"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lPassword"
+        app:layout_constraintVertical_bias="0.168">
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#54E2F4"
+            android:backgroundTint="#00BCD4"
+            android:elevation="30dp"
+            android:freezesText="false"
+            android:text="LogIn" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="WorkDone"
+        android:textAlignment="textStart"
+        android:textColor="#00BCD4"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Let's get started"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/lemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2" />
+
+    <EditText
+        android:id="@+id/lPassword"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="304dp"
+        android:backgroundTint="#00BCD4"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/lemail"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="292dp"
+        android:autofillHints=""
+        android:backgroundTint="#00BCD4"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/signinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have a account? Click here."
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.287" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
